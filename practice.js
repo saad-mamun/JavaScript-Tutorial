@@ -135,3 +135,177 @@
 // let sum = 20;
 // let sum1 = 30;
 // console.log(`Now the sum is ${sum * sum1}`);
+
+
+
+// user er data input kore rakhe CLASSES method..very very Importent
+// class UserInfo {
+//     constructor(name,prof,age,gender,hometown){
+//         this.name = name;
+//         this.prof = prof;
+//         this.age = age;
+//         this.gender = gender;
+//         this.hometown = hometown;
+//     }
+// }
+
+// const user1 = new UserInfo("Liotn","Programmer",20,"Male","Rajshahi");
+// const user2 = new UserInfo("Mamun","Freelancer",21,"Male","Dhaka");
+// console.log(user1);
+// console.log(user2);
+
+
+
+const person = {
+    firstName:"Liton",
+    lastName:"Mamun",
+    age:21,
+    // prof:   /// defoult valu hisebe kaj dorbe PROF
+}
+
+let {firstName,lastName,prof="programmer"} = person; // Destructuring ata k bole
+console.log(prof);
+
+
+
+// String Distructuring
+
+// let string = "This is my world";
+// let [a,b,c,d,e,f,h] = string;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+
+// arry Dustructuring 
+// let fruits = ["Apple","Banana","Mango"];
+// let [fruit,fruit1,fruit2] = fruits;
+// console.log(fruit2);
+
+
+
+// Get
+// Get dia property change korte pari
+// const person = {
+//     firstName:"Liton",
+//     lastName:"Mamun",
+//     age:20,
+//     prof:"Programmer",
+//     get pro(){
+//         return this.prof;
+//     }
+// }
+// console.log(person);
+// console.log(person.pro)
+
+// set
+// set dia property er value change korte pari
+
+// const userInfo = {
+//     username : "Liton",
+//     BusinessType : "edType Business",
+//     email:"mamunali2660@gamil.com",
+//      set Newemail(newmail){
+//         this.email = newmail
+//      }
+// }
+
+// userInfo.Newemail = "admingamilkk@gamil.com"
+// console.log(userInfo);
+// console.log(userInfo.email)
+
+
+
+//  classExpreesion
+ 
+//  let person = class {
+//     constructor(name,email,password){
+//         this.name = name;
+//         this.email = email;
+//         this.password = password;
+//     }
+// }
+
+// let about = new person("Liton","litonali5852@gamil.com");
+// console.log(about);
+
+
+// First class cityzen
+
+// function Factory(litonclass){
+//     return new litonclass()
+// }
+// let greating = Factory(class{
+//     sayhi(){
+//         console.log("Hello hublu vaiya");
+//     }
+// })
+
+// greating.sayhi()
+
+
+// let promName = "myName";
+
+
+// const userInfo = {
+//     [promName]:"Liton",
+//     email:"litonali.com",
+//     age:20
+// }
+// console.log(userInfo);
+
+
+
+// Inheritance.......
+
+
+// class car {
+//     constructor(Brand){
+//         this.Brand = Brand;
+//     }
+//     parent(){
+//         return "My brand name is " + this.Brand
+//     }
+// }
+
+// class Model extends car{
+//     constructor(Brand,Model){
+//         super(Brand);
+//         this.Model = Model;
+//     }
+//     show(){
+//         return this.parent() + " and Model is" + this.Model;
+//     }
+// }
+
+// let myCar = new  Model("BMW","x7");
+// console.log(myCar.show());
+
+
+
+//newtarget......
+// function Person(name){
+//     if(!new.target){
+//         throw "Must use paretor with this person function";
+//     }
+//     this.name = name;
+// }
+// let myPerson = new Person("Liotn Al Mamun")
+// console.log(myPerson);
+
+
+// function Shape(draw){
+//     if(!new.target){
+//         throw new "cannot draw"
+//     }
+//     this.draw = draw;
+// }
+// const pak = new Shape("liton Al Mamun");
+// console.log(pak);
+
+
+
+
+
+
+
