@@ -13,12 +13,14 @@ console.log(text.innerHTML)
 
 
 
-
 const app = document.querySelector("#app");
-const langs = ['js','python','c#','php','java'];
-const node = langs.map((Prolangs)=>{
-    let li = document.createElement("li");
-    li.textContent = Prolangs;
-    return li
-});
-app.append(...node)
+const langs = ['HTML','JS','JAVA','PYTHON'];
+
+const nodes = langs.map((lang)=>{
+    const li = document.createElement('li');
+    li.textContent = lang;
+    return li;
+})
+app.prepend(...nodes)
+
+
