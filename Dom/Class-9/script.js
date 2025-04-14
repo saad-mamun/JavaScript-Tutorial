@@ -32,6 +32,8 @@ clickMe.addEventListener('dblclick',()=>{
     console.log("Mouse double click")
 })
 
+
+
 let track = document.querySelector("#track");
 track.addEventListener('mousemove', (e)=>{
     let log = document.querySelector("#log");
