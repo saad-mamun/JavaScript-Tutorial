@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#box{
+    padding: 20px 10px;
+    
+}
+
+#remove{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+}
