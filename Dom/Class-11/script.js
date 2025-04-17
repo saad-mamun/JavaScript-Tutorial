@@ -1,17 +1,26 @@
 const menu = document.querySelector("#menu");
-menu.addEventListener('click',(event)=>{
-    let target = event.target;
-
+menu.addEventListener('click', function (e){
+    let target = e.target;
 
     switch(target.id){
-        case "home":
-            console.log("you have click home button");
+        case 'home':
+            console.log("home button")
             break;
-        case "about":
-            console.log("you have click about button");
+        case 'about':
+            console.log('about button')
             break;
-        case "report":
-            console.log("you have click report button");
-            break;        
+        case 'contact':
+            console.log('contact button')
+            break;
     }
 })
+
+
+// JavaScript dispatchEvent
+
+const myButton = document.getElementById("myButton");
+myButton.addEventListener('click',()=>{
+    alert('Button was clicked')
+})
+const event = new Event('click');
+myButton.dispatchEvent(event)
