@@ -25,3 +25,11 @@ accept.addEventListener('click',()=>{
         alert("Checked Is SuccessFul")
     }
 })
+
+//select box
+
+const button = document.querySelector("#button");
+const LanguageName = document.querySelector("#LanguageName");
+button.addEventListener("click",()=>{
+    alert(LanguageName.value)
+})
